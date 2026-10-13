@@ -1,0 +1,19 @@
+[package]
+name = "klarity-exhibit-21-da-vinci-atr-roster"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Da Vinci ATR roster Coverage checks"
+publish = false
+
+[lib]
+name = "atr_roster"
+path = "src/lib.rs"
+
+[[bin]]
+name = "validate-atr-roster"
+path = "src/bin/validate_atr_roster.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
